@@ -123,11 +123,12 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Send
             }
         }
     }
-
+// this method for fetch  movies data
     public void collectData(String Key){
 
         if(MainActivity.NetworkState()) {
             FetchData fetchData = new FetchData(Key, "");
+            ClickEvent();// I use it becouse
             fetchData.execute();
 
             fetchData.setNetworkResponse(new NetworkResponse() {
@@ -231,7 +232,7 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Send
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 if(view!=null) {
-                  checkFrag=false;
+                    checkFrag=false;
                     TextView textView = (TextView) view;
                     String SpinnerKey = textView.getText() + "";
                     if (SpinnerKey.equals("Popular Movies")){

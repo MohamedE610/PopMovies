@@ -69,7 +69,10 @@ public class Trailer  implements Parcelable {
         } catch (JSONException e) {
             e.  printStackTrace();
         }
-     return trailer;
+        finally{
+            return trailer;
+        }
+
         /*int counter = 0;
         ArrayList<Trailer>TrailerList = new ArrayList<Trailer>();
         try {

@@ -48,7 +48,10 @@ public class Review   implements Parcelable {
         } catch (JSONException e) {
             e.  printStackTrace();
         }
-       return review;
+        finally {
+            return review;
+        }
+
       /*  int counter = 0;
         ArrayList<Review> ReviewList = new ArrayList<Review>();
         try {
