@@ -138,25 +138,28 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="10dp">
-
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:padding="10dp"
                         android:id="@+id/button"
-                        android:textSize="30dp"
-                        android:textColor="#0a0a09"
                         android:src="@drawable/powerampiconmax"
                         android:layout_gravity="center"
+                        android:layout_centerInParent="true"
 
                         />
+</RelativeLayout>
                 <TextView
                     android:id="@+id/TrailerName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                     android:textColor="#0a0a09"
-                    android:padding="10dp"
+                    android:textColor="#0a0a09"
                     android:textAlignment="center"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
                     />
 
                </LinearLayout>

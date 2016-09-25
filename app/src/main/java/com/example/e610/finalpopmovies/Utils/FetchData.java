@@ -78,7 +78,6 @@ public class FetchData extends AsyncTask<Void,Void,String> {
             Log.d("JSON", JsonData);
         } catch (IOException e) {
             Log.e("PlaceholderFragment", "Error ", e);
-            Toast.makeText(MainActivity.ctx," No Internet Connection", Toast.LENGTH_SHORT).show();
             // If the code didn't successfully get the weather data, there's no point in attemping
             // to parse it.
             return null;

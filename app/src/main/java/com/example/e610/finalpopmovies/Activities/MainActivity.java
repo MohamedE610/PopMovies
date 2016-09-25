@@ -139,6 +139,9 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Send
                     movieAdapter = new MovieAdapter(Movies, context);
                     MoviesRecyclerView.setAdapter(movieAdapter);
 
+                    if(JsonData==null)
+                        Toast.makeText(MainActivity.ctx," No Internet Connection", Toast.LENGTH_SHORT).show();
+
                     CheckTablet();
                     ClickEvent();
                 }
