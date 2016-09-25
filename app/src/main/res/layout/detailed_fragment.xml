@@ -136,28 +136,28 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 android:padding="10dp">
 
-                 <TextView
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:padding="10dp"
+                        android:id="@+id/button"
+                        android:textSize="30dp"
+                        android:textColor="#0a0a09"
+                        android:src="@drawable/powerampiconmax"
+                        android:layout_gravity="center"
+
+                        />
+                <TextView
                     android:id="@+id/TrailerName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                      android:textColor="#0a0a09"
-                    />
-<RelativeLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
                     android:padding="10dp"
-                    android:id="@+id/button"
-                    android:textSize="30dp"
-                    android:textColor="#0a0a09"
-                    android:src="@drawable/powerampiconmax"
+                    android:textAlignment="center"
                     />
-</RelativeLayout>
 
                </LinearLayout>
 
