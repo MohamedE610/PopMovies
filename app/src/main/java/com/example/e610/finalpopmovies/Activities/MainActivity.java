@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Send
         outState.putParcelableArrayList("Movies",Movies);
         super.onSaveInstanceState(outState);
     }
-
+//  I used this method to pass from MainFragment data to  MainActivity (this data is view of MainFragment)
     @Override
     public void send(View v) {
         view=v;
@@ -262,7 +262,7 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Send
         });
 
     }
-
+//this method for check if internet is available or not
     public static boolean NetworkState()
     {
         ConnectivityManager connectivityManager = (ConnectivityManager) ctx.getSystemService(Context.CONNECTIVITY_SERVICE);

@@ -78,7 +78,7 @@ public class DetailedFragment extends Fragment {
         }
         else{
             movie=MoviesInfo.getParcelable("Movie");
-
+// this check to know if i have to fetch data from internet or get data from SharedPreference
             if(!FavouriteSelected) {
                 FetchReview();
                 FetchTrailer();
@@ -90,7 +90,7 @@ public class DetailedFragment extends Fragment {
         }
 
         setMovieDetails();
-
+// this line to know if a movie is favourite or not
         movie.Favourite=mySharedPreferences.CheckFavourite(movie.getId());
 
         if(movie.Favourite)
@@ -207,7 +207,7 @@ public void FetchReview() {
         ReviewAuthor.setText(movie.getReviewAuthor());
         ReviewContent.setText(movie.getReviewContent());
     }
-
+    // i use this method to know if user click on favourite movies selection in spinner   return true if "favourite movies" selected and false otherwise
     public static void IsFavouriteSelected(boolean isSelected)
     {
         FavouriteSelected=isSelected;

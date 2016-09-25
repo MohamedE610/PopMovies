@@ -32,7 +32,7 @@ public class MainFragment extends Fragment {
 
     }
 
-
+// this interface to send data to MainActivity  this data is a view of MainFragment
     public interface SendToMainActivity{
         void send(View v);
     }
